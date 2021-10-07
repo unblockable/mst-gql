@@ -37,14 +37,19 @@
     "build": "microbundle --no-compress --external mobx,mobx-react,mobx-state-tree,graphql-tag,graphql,react,react-dom,graphql-request",
     "format": "prettier --write '**/*'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "dependencies": {
     "apollo": "^2.33.4",
     "arg": "^5.0.0",
     "camelcase": "^6.2.0",
     "cosmiconfig": "^7.0.0",
     "fast-json-stable-stringify": "^2.1.0",
-    "graphql": "14.7.0",
-    "graphql-request": "^3.5.0",
+    "graphql": "14.6.0",
+    "graphql-request": "^3.4.0",
     "lodash": "^4.17.21",
     "pluralize": "^8.0.0",
     "throttle-debounce": "^3.0.1"
